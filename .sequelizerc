@@ -1,0 +1,8 @@
+const path = require('path');
+
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'database', 'config.js'), //Arquivo com as configurações de conexão do DB
+    'models-path': path.resolve(__dirname, 'src', 'models'), //Arquivo com as models que irão representar os registros na tabela
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations'), //Diretório com as migrations feitas pelo seq...
+    'seeders-path': path.resolve(__dirname, 'src', 'database', 'seeds')
+}
