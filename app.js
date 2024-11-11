@@ -1,5 +1,6 @@
 import express from 'express';
 import homeRoutes from './src/routes/homeRoutes';
+import usersRoutes from './src/routes/usersRoute';
 
 class App{
 
@@ -17,6 +18,7 @@ class App{
 
     routes(){
         this.app.use(homeRoutes);
+        this.app.use(usersRoutes);
     }
 }
 
